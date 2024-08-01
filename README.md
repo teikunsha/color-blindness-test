@@ -21,4 +21,4 @@
 
 ## 3. 部署
 
-#### [https://gsbka7.github.io/color-blindness-test/](https://gsbka7.github.io/color-blindness-test/)
+#### [https://teikunsha.github.io/color-blindness-test-main/](https://teikunsha.github.io/color-blindness-test-main/)
