@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(187, 133, 114);
+}
+
+.reciprocal{
+    position: absolute;
+    top: 5%;
+    font-size: 50px;
+
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(226, 225, 222);
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+
+}
+
+.box{
+    width: calc(100% / var(--size));
+    height: calc(100% / var(--size));
+    border: 5px solid rgb(226, 225,222);
+    border-radius: 10px;
+
+}
+
+.box.answer{
+    opacity: calc(var(--size) / 11);
+    
+}
+
+.start{
+    width: 200px;
+    height: 70px;
+    background-color: brown;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    
+}
+
+.start .active{
+    text-align: center;
+    line-height: 70px;
+    font-size: 33px;
+    letter-spacing: 3px;
+
+}
+
+.rule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: rgb(48, 46, 46);
+    margin-top: 20px;
+    
+}
+
+.rule span{
+    padding: 2px;
+
+}
+
+.end{
+    position: relative;
+
+}
+
+.background{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: 20%;
+    gap: 20px;
+    background-color: rgb(226, 164, 141);
+    border: 5px solid rgb(216, 215, 215);
+    box-shadow: 15px 5px 20px;
+    border-radius: 20px;
+    
+}
+
+.score{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+@media (max-width: 570px) {
+    .container{
+        padding: 0 50px 20px;
+    }
+    .content{
+    width: 100%;
+
+    }
+    .score{
+        font-size: 7vw;
+    
+    }
+    
+}
+
+@media (max-width: 570px) {
+    .container{
+        padding: 0 50px 20px;
+    }
+    .content{
+    width: 100%;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .start{
+        width: 150px;
+        height: 60px;
+        margin-top: 40px;
+        
+    }
+    .start .active{
+        line-height: 45px;
+        font-size: 25px;
+    
+    }
+    .rule{
+        font-size: 15px;
+        
+    }
+
+    .reciprocal{
+        top: 2%;
+        font-size: 25px;
+    
+    }
+    
+}
